@@ -1,75 +1,91 @@
+/*Récupere la font San Francisco d'apple*/
 @font-face { font-family: SFPro; src: url('font/SF-Pro-Text-Regular.otf'); }
 body{
 	font-family: "SFPro",sans-serif;
 }
 
+/*Responsive utils*/
+* {
+    box-sizing: border-box;
+}
+
+/*Menu en grande taille*/
 @media screen and (min-width: 750px){
-.menu{
-	background-color: rgba(25, 25, 25,0.9);
-	left:0;
-	right:0;
-	top:0;
-	overflow: hidden;
-	position: fixed;
-	float: left;
-	width: 100%;
-	height: 2.72em;
-	 
+
+	/*Style du menu*/	
+	.menu{
+		background-color: rgba(25, 25, 25,0.9);
+		left:0;
+		right:0;
+		top:0;
+		overflow: hidden;
+		position: fixed;
+		float: left;
+		width: 100%;
+		height: 2.72em;
+		text-align: center; 
+	}
+
+	/*Style des liens du menu*/
+	.menu a {
+		color: #f2f2f2;
+		text-decoration: none;
+		font-size:14px;
+	}
+
+	/*Positionement du logo de la poire*/
+	#pear{
+		position: fixed;	
+		top:0.8em;
+	}
+	/*Ajoute un espacement entre la poire et le premier élément texte*/
+	#t{
+		margin-left: 0.7em;
+	}
+
+	/*Positionement du logo recherche*/
+	#rech{
+		position: fixed;
+		top:0.2em;
+		margin-right: 5vw;
+	}
+
+	/*Positionement du logo boutique*/
+	#shop{
+		position: fixed;
+		top:0.2em;
+		margin-left: 6vw;
+
+	}
+
+	/*Change de couleur un lien avec du texte au passage de la souris*/
+	.MenuText a:hover{
+		transition: color 0.2s ease;
+		color: gray;
+	}
+
+	/*Positionement du tableau qui contient le menu*/
+	.MenuText ul{
+		margin-top:0.8em;
+	}
+
+	/*Ajoute un espacement entre chaque li*/
+	.MenuText li{
+		display:inline;
+		margin-right: 5vw;
+	}
+
+	/*Desactive l'icone du menu de petite taille*/
+	.menu .icon{
+		display: none;
+	}
 }
 
-
-.menu a {
-	color: #f2f2f2;
-	text-decoration: none;
-	font-size:14px;
-}
-
-#pear{
-	position: fixed;	
-	top:0.8em;
-}
-
-#t{
-	margin-left: 0.7em;
-}
-
-#rech{
-	position: fixed;
-	top:0.2em;
-	margin-right: 5vw;
-}
-
-#shop{
-	position: fixed;
-	top:0.2em;
-	margin-left: 6vw;
-
-}
-
-.menu a:hover{
-	transition: color 0.2s ease;
-	color: gray;
-}
-
-.text ul{
-	margin-top:0.8em;
-	margin-left: 15vw;
-}
-
-.text li{
-	display:inline;
-	margin-right: 5vw;
-}
-
-.menu .icon{
-	display: none;
-}
-}
-
+/*Menu en petite taille*/
 @media screen and (max-width: 750px){
 	.menu{
-		text-align:left;
-		background-color: rgba(25, 25, 25,0.9);
+	text-align:left;
+	background-color: rgba(25, 25, 25,0.9);
 	left:0;
 	right:0;
 	top:0;
@@ -88,7 +104,7 @@ body{
     .menu a:hover{
 	transition: color 0.2s ease;
 	color: gray;
-}
+	}
     .menu a.icon{
     float: left;
     display: block;
@@ -111,4 +127,36 @@ body{
     display: block;
     text-align: left;
   }
+}
+
+
+@media screen and (min-width: 1050px) and (min-height: 750px){
+	.centeredLink{
+		text-align: center;
+		width: 100%;
+		float: left;
+		padding-top: 2%;
+		padding-bottom: 0.2%;
+		margin-bottom: 0.8%;
+		background-color: #FAFAFA;
+	}
+
+	.centeredLink a {
+		color: black;
+		text-decoration: none;	
+	}
+
+	.text{
+		line-height: 0.01;
+		margin-bottom: 5%;
+	}
+
+	.titre{
+		font-size:50px;
+		font-weight: bold;
+	}
+
+	.underText{
+		font-size: 20px;
+	}
 }
