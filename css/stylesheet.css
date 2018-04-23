@@ -181,4 +181,24 @@ body{
 	.underText{
 		font-size: 28px;
 	}
+
+	.gauche{
+		float: left;
+		margin-left: 5px;
+	}
+
+	.droite{
+		float: right;
+		margin-right: 5px;
+	} 
+
+	.petitLink{
+
+		text-align: center;
+		width: 49%;
+		padding-top: 2%;
+		padding-bottom: 0.2%;
+		margin-bottom: 0.8%;
+		background-color: #000000;
+	}
 }
