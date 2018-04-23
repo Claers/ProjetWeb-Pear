@@ -54,7 +54,7 @@ body{
 	#shop{
 		position: fixed;
 		top:0.2em;
-		margin-left: 6vw;
+		margin-left: 5vw;
 
 	}
 
@@ -72,7 +72,7 @@ body{
 	/*Ajoute un espacement entre chaque li*/
 	.MenuText li{
 		display:inline;
-		margin-right: 5vw;
+		margin-right: 4vw;
 	}
 
 	/*Desactive l'icone du menu de petite taille*/
@@ -98,8 +98,11 @@ body{
 		overflow-x: hidden;
 		transition: 0.5s;
 		z-index: 1;
+		text-decoration: none;
 	}
-    .menu a {
+    .menu a { 
+    	display: flex;
+    	flex-direction: column;
     	color: #f2f2f2;
     	display: none;
    		text-decoration: none;
@@ -118,7 +121,7 @@ body{
     }
     .menu li{
     	float:left;
-    	display:inline;
+    	list-style-type: none;
 
     }
 

@@ -18,3 +18,11 @@ function closeNav() {
     var but = document.getElementById('openButton');
 	but.setAttribute("onclick","openNav()")
 }
+
+window.onresize = function(event) {
+    document.getElementById("myMenu").style.height = "2.72em";
+    var x = document.getElementById("myMenu")
+    x.className = "menu";
+    var but = document.getElementById('openButton');
+    but.setAttribute("onclick","openNav()")
+};
