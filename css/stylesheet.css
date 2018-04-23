@@ -9,6 +9,7 @@ body{
     box-sizing: border-box;
 }
 
+
 /*Menu en grande taille*/
 @media screen and (min-width: 750px){
 
@@ -25,13 +26,18 @@ body{
 		height: 2.72em;
 		text-align: center; 
 	}
-
+	.page{
+		position: absolute;
+	}
 	/*Style des liens du menu*/
 	.menu a {
-		color: #f2f2f2;
+		 color: #f2f2f2;
 		text-decoration: none;
 		font-size:14px;
 	}
+	a.selected{
+	 color: #7C7C7C;
+}
 
 	/*Positionement du logo de la poire*/
 	#pear{
@@ -103,12 +109,14 @@ body{
     .menu a { 
     	display: flex;
     	flex-direction: column;
-    	color: #f2f2f2;
+    	 color: #f2f2f2;
     	display: none;
    		text-decoration: none;
    		transition: 0.3s;
    	}
-
+	a.selected{
+	 color: #7C7C7C;
+}
     .menu a:hover{
 		transition: color 0.2s ease;
 		color: gray;
@@ -201,4 +209,34 @@ body{
 		margin-bottom: 0.8%;
 		background-color: #000000;
 	}
+}
+
+.footer{
+    width: 100%;
+	background-color: #F2F2F2;
+}
+
+.footertext{
+	width: 70%;
+
+	text-align: center;
+	margin-left: 15%;
+	font-size: 15px;
+	color: #8F8892;
+
+}
+body{
+
+margin:0;
+
+padding:0;
+
+}
+
+body, html{height:100%;}
+
+body{
+
+text-align:center;
+
 }
