@@ -8,9 +8,25 @@ body{
 /*Responsive utils*/
 * {
     box-sizing: border-box;
+
 }
 
+.footer{
+	display: flex;
+	flex-direction: column;
+	background-color: #F2F2F2;
+}
 
+.footertext{
+	width: 70%;
+	text-align: center;
+	margin-left: 15%;
+	font-size: 15px;
+	color: #8F8892;
+}
+.footertext p{
+	position: absolute;
+}
 /*Menu en grande taille*/
 @media screen and (min-width: 750px){
 
@@ -156,6 +172,25 @@ body{
 		padding-bottom: 0.2%;
 		background-color: #FAFAFA;
 	}
+	.petitLink{
+
+		text-align: center;
+		width: 49%;
+		
+		padding-top: 2%;
+		padding-bottom: 0.2%;
+		margin-bottom: 0.8%;
+		background-color: #000000;
+	}
+		.gauche{
+		float: left;
+		border-left: 5px solid #fff;
+	}
+
+	.droite{
+		float: right;
+		border-right: 5px solid #fff;
+	} 
 	.separate{
 		width: 100%;
 		background-color: #fff;
@@ -163,9 +198,32 @@ body{
 		padding-bottom: 0.8%;
 	}
 	.homepod{
+		margin-left: 0%;
+		padding-bottom: 0%;
 		background-color: #B00E23;
 	}
 
+	.iMac{
+		height: 568px;
+		background-image: url("../img/imac_pro_films_large.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.iPad{
+		height: 568px;
+		background-color: #F5F5F5;
+		background-image: url("../img/Sanstitrehh.png");
+		background-repeat: no-repeat;
+		background-position: center;
+
+	}
+	#IPhone8Redimg{
+		height: 440px;
+	}
+	#iPhone8Img{
+		height: 390px;
+	}
 	.iphoneX{
 		background-color: #FAFAFA;
 		padding-top: 7%;
@@ -200,41 +258,13 @@ body{
 		font-size: 28px;
 	}
 
-	.gauche{
-		float: left;
-		margin-left: 5px;
-	}
 
-	.droite{
-		float: right;
-		margin-right: 5px;
-	} 
-
-	.petitLink{
-
-		text-align: center;
-		width: 49%;
-		padding-top: 2%;
-		padding-bottom: 0.2%;
-		margin-bottom: 0.8%;
-		background-color: #000000;
-	}
+.double{
+	flex : 50%;
+}
+	
 }
 
-.footer{
-    width: 100%;
-	background-color: #F2F2F2;
-}
-
-.footertext{
-	width: 70%;
-
-	text-align: center;
-	margin-left: 15%;
-	font-size: 15px;
-	color: #8F8892;
-
-}
 body{
 
 margin:0;
@@ -250,3 +280,11 @@ body{
 text-align:center;
 
 }
+
+.row{
+	display: flex;
+	flex-wrap: row wrap;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
