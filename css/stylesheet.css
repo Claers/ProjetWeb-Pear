@@ -2,6 +2,7 @@
 @font-face { font-family: SFPro; src: url('font/SF-Pro-Text-Regular.otf'); }
 body{
 	font-family: "SFPro",sans-serif;
+	background-color: #FFFFFF;
 }
 
 /*Responsive utils*/
@@ -153,11 +154,20 @@ body{
 		float: left;
 		padding-top: 2%;
 		padding-bottom: 0.2%;
-		margin-bottom: 0.8%;
 		background-color: #FAFAFA;
+	}
+	.separate{
+		width: 100%;
+		background-color: #fff;
+		float: left;
+		padding-bottom: 0.8%;
+	}
+	.homepod{
+		background-color: #B00E23;
 	}
 
 	.iphoneX{
+		background-color: #FAFAFA;
 		padding-top: 7%;
 		padding-bottom: 11%;
 	}
