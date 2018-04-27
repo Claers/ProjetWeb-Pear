@@ -26,3 +26,9 @@ window.onresize = function(event) {
     var but = document.getElementById('openButton');
     but.setAttribute("onclick","openNav()")
 };
+
+var imagesArray = ["../img/imac_pro_01_large.png","../img/imac_pro_02_large.png","../img/imac_pro_03_large.png","../img/imac_pro_04_large.png","../img/imac_pro_05_large.png","../img/imac_pro_06_large.png"]
+$(document).ready(function(){
+	var num = Math.floor(Math.random() *6);
+	document.getElementById("iMacImg").src= imagesArray[num];
+})

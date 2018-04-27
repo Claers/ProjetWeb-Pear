@@ -1,6 +1,7 @@
 
 body{
 	background-color: #1A1A1A;
+	font-family: "SFPro",sans-serif;
 }
 
 
@@ -12,16 +13,20 @@ body{
 .MacBook{
 	display: flex;
 	flex-direction: column;
-
 }
+
+.MacBook a:hover{
+		transition: color 0.2s ease;
+		color: #6bf;
+	}
 
 .deviceimg{
 	display: block;
-	margin-left: 12px;
+	margin-left: 9px;
 }
 
 .deviceimg.one{
-	margin-left: 7px;
+	margin-left: 5px;
 }
 
 .deviceimg.two{
@@ -47,13 +52,62 @@ body{
 	.menuDevice a {
 		 color: #f2f2f2;
 		text-decoration: none;
-		font-size:14px;
+		font-size:12px;
+		font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 	}
-	.deviceText li{
+	.deviceListText li{
 		display:inline-block;
 		vertical-align: top;
-		margin-right: 2vw;
+		margin-right: 1.5vw;
 	}
+
+.deviceP{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.deviceP p{
+	color:black;
+}
+
+.deviceP.iMacPro p{
+	color:white;
+}
+
+.deviceP a{
+	color: #6bf;
+	text-decoration: none;
+	font-size: 20px;	
+	margin-right: 15px;
+}
+
+.deviceP a:hover{
+	text-decoration: underline;
+	text-decoration-position: 2px; 
+}
+
+
+#iMacImg{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.deviceImage{
+	margin-top: 20px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.iMacD{
+	background-color: #FAFAFA;
+}
+
 
 	@media screen and (min-width: 750px){
 
@@ -65,10 +119,8 @@ body{
 		top:0;
 		overflow: hidden;
 		position: fixed;
-		float: left;
 		width: 100%;
-		height: 2.72em;
-		text-align: center; 
+		
 	}
 	.page{
 		position: absolute;
@@ -90,7 +142,7 @@ body{
 	}
 	/*Ajoute un espacement entre la poire et le premier élément texte*/
 	#t{
-		margin-left: 0.7em;
+		margin-left: 0.5em;
 	}
 
 	/*Positionement du logo recherche*/
@@ -117,10 +169,12 @@ body{
 	/*Positionement du tableau qui contient le menu*/
 	.MenuText ul{
 		margin-top:0.8em;
+		padding-right: 70px;
 	}
 
 	/*Ajoute un espacement entre chaque li*/
 	.MenuText li{
+		font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 		display:inline;
 		margin-right: 4vw;
 	}
@@ -172,11 +226,11 @@ body{
     	position: fixed;
     }
     .menu li{
+    	font-size: 14px;
     	float:left;
     	list-style-type: none;
-
+    	font-style: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     }
-
     .menu.responsive .icon {
     	position: absolute;
     	right: 0;

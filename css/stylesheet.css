@@ -1,5 +1,6 @@
 /*Récupere la font San Francisco d'apple*/
 @font-face { font-family: SFPro; src: url('font/SF-Pro-Text-Regular.otf'); }
+
 body{
 	font-family: "SFPro",sans-serif;
 	background-color: #FFFFFF;
@@ -8,7 +9,7 @@ body{
 /*Responsive utils*/
 * {
     box-sizing: border-box;
-
+    
 }
 
 .footer{
@@ -63,7 +64,7 @@ body{
 	}
 	/*Ajoute un espacement entre la poire et le premier élément texte*/
 	#t{
-		margin-left: 0.7em;
+		margin-left: 0.5em;
 	}
 
 	/*Positionement du logo recherche*/
@@ -90,6 +91,7 @@ body{
 	/*Positionement du tableau qui contient le menu*/
 	.MenuText ul{
 		margin-top:0.8em;
+		padding-right: 50px;
 	}
 
 	/*Ajoute un espacement entre chaque li*/
@@ -145,9 +147,10 @@ body{
     	position: fixed;
     }
     .menu li{
+    	font-size: 14px;
     	float:left;
     	list-style-type: none;
-
+    	font-style: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     }
 
     .menu.responsive .icon {
