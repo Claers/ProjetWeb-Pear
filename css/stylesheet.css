@@ -33,16 +33,13 @@ body{
 
 	/*Style du menu*/	
 	.menu{
-		background-color: rgba(25, 25, 25,0.9);
-		left:0;
-		right:0;
-		top:0;
+		background-color: rgba(0,0,0,0.8);
+		padding-left: 23%;
+		display: flex;
 		overflow: hidden;
 		position: fixed;
-		float: left;
 		width: 100%;
-		height: 2.72em;
-		text-align: center; 
+		height: 5%;
 	}
 	.page{
 		position: absolute;
@@ -59,26 +56,21 @@ body{
 
 	/*Positionement du logo de la poire*/
 	#pear{
-		position: fixed;	
-		top:0.8em;
+		height: 18px;	
+		width: 12px;
 	}
 	/*Ajoute un espacement entre la poire et le premier élément texte*/
-	#t{
-		margin-left: 0.5em;
-	}
+
 
 	/*Positionement du logo recherche*/
 	#rech{
-		position: fixed;
-		top:0.2em;
-		margin-right: 5vw;
+		height: 20px;
+		width: 20px;
 	}
 
 	/*Positionement du logo boutique*/
 	#shop{
-		position: fixed;
-		top:0.2em;
-		margin-left: 5vw;
+
 
 	}
 
@@ -96,7 +88,7 @@ body{
 
 	/*Ajoute un espacement entre chaque li*/
 	.MenuText li{
-		display:inline;
+		display:inline-flex;
 		margin-right: 4vw;
 	}
 

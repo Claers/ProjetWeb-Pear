@@ -114,13 +114,12 @@ body{
 	/*Style du menu*/	
 	.menu{
 		background-color: rgba(0,0,0,0.8);
-		left:0;
-		right:0;
-		top:0;
+		padding-left: 23%;
+		display: flex;
 		overflow: hidden;
 		position: fixed;
 		width: 100%;
-		
+		height: 5%;
 	}
 	.page{
 		position: absolute;
@@ -137,27 +136,22 @@ body{
 
 	/*Positionement du logo de la poire*/
 	#pear{
-		position: fixed;	
-		top:0.8em;
+		height: 18px;	
+		width: 12px;
 	}
 	/*Ajoute un espacement entre la poire et le premier élément texte*/
-	#t{
-		margin-left: 0.5em;
-	}
+
 
 	/*Positionement du logo recherche*/
 	#rech{
-		position: fixed;
-		top:0.2em;
-		margin-right: 5vw;
+height: 20px;
+		width: 20px;
 	}
 
 	/*Positionement du logo boutique*/
 	#shop{
-		position: fixed;
-		top:0.2em;
-		margin-left: 5vw;
-
+		height: 20px;
+		width: 20px;
 	}
 
 	/*Change de couleur un lien avec du texte au passage de la souris*/
@@ -175,8 +169,10 @@ body{
 	/*Ajoute un espacement entre chaque li*/
 	.MenuText li{
 		font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-		display:inline;
+		display:inline-flex;
+		align-items: baseline;
 		margin-right: 4vw;
+
 	}
 
 	/*Desactive l'icone du menu de petite taille*/
