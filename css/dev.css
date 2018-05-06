@@ -1,0 +1,72 @@
+.row{
+	display: flex;
+}
+
+.buy {
+text-decoration: none;
+display :inline-flex;
+list-style-type: none;
+padding-left: 25%;
+margin-top: 0.8%;
+padding-bottom: 5px;
+width: 100%;
+border-style: none none solid none;
+border-color: rgba(51,51,51,0.2);
+border-width: 1px;
+border-spacing: 10px 10px 0px 10px;
+	position: sticky;
+	top:0px;
+	background-color: rgba(255,255,255,0.9);
+}
+
+.buy a{
+	text-decoration: none;
+	color:black;
+}
+
+.centerimg{
+	 display: block;
+	 margin-left: auto; 
+	 margin-right: auto;
+}
+
+.ProductName{
+	margin-top: 15px;
+	margin-bottom: 10px;
+	font-size: 23px;
+	width: 15%;
+
+}
+
+.Pres{
+
+	margin-top: 25px;
+	margin-left: 30%;
+	font-size: 11px;
+}
+
+.Pres a{
+	color:#333;
+}
+
+.Caract{
+	margin-top: 25px;
+	margin-left: 1.5%;
+	font-size: 11px;
+}
+
+.BuyButton{
+
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border: 1px solid #147bcd;
+	border-radius: 5px;
+	margin-left: 15px;
+	background: linear-gradient(#42a1ec, #0070c9);
+}
+
+.BuyButton a{
+	padding: 10px 10px 10px 10px;
+	font-size: 15px;
+	color: white;
+}
