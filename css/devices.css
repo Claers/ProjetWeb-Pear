@@ -109,17 +109,23 @@ body{
 }
 
 
-	@media screen and (min-width: 750px){
+	@media screen and (min-width: 765px){
 
 	/*Style du menu*/	
 	.menu{
 		background-color: rgba(0,0,0,0.8);
-		padding-left: 23%;
-		display: flex;
+		 padding-left: auto; 
+		padding-left: auto	; 
+		display: block;
 		overflow: hidden;
 		position: fixed;
 		width: 100%;
-		height: 5%;
+		height: 45px;
+	}
+	.MenuText ul{
+		margin-top:0.8em;
+		padding-left: 10%;
+
 	}
 	.page{
 		position: absolute;
@@ -160,12 +166,6 @@ height: 20px;
 		color: gray;
 	}
 
-	/*Positionement du tableau qui contient le menu*/
-	.MenuText ul{
-		margin-top:0.8em;
-		padding-right: 70px;
-	}
-
 	/*Ajoute un espacement entre chaque li*/
 	.MenuText li{
 		font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
@@ -182,7 +182,7 @@ height: 20px;
 }
 
 /*Menu en petite taille*/
-@media screen and (max-width: 750px){
+@media screen and (max-width: 765px){
 	.menu{
 		text-align:left;
 		background-color: rgba(0,0,0,0.8);

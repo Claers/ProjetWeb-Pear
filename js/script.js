@@ -12,7 +12,7 @@ function openNav() {
 
 /* Close */
 function closeNav() {
-    document.getElementById("myMenu").style.height = "2.72em";
+    document.getElementById("myMenu").style.height = "3em";
     var x = document.getElementById("myMenu")
     x.className = "menu";
     var but = document.getElementById('openButton');
@@ -20,7 +20,7 @@ function closeNav() {
 }
 
 window.onresize = function(event) {
-    document.getElementById("myMenu").style.height = "2.72em";
+    document.getElementById("myMenu").style.height = "3em";
     var x = document.getElementById("myMenu")
     x.className = "menu";
     var but = document.getElementById('openButton');

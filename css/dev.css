@@ -1,5 +1,6 @@
 .row{
 	display: flex;
+	flex-direction: column;
 }
 
 .buy {
@@ -19,6 +20,37 @@ border-spacing: 10px 10px 0px 10px;
 	background-color: rgba(255,255,255,0.9);
 }
 
+.deviceP{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.deviceP p{
+	color:black;
+}
+
+.deviceP.iMacPro p{
+	color:white;
+}
+
+.deviceP a{
+	color: #0070c9;
+	text-decoration: none;
+	font-size: 20px;	
+}
+
+.deviceP a:hover{
+	text-decoration: underline;
+	text-decoration-position: 2px; 
+}
+
+.deviceP.backPic a{
+	color: white;
+	text-decoration: none;
+	font-size: 20px;	
+}
+
 .buy a{
 	text-decoration: none;
 	color:black;
@@ -35,7 +67,6 @@ border-spacing: 10px 10px 0px 10px;
 	margin-bottom: 10px;
 	font-size: 23px;
 	width: 15%;
-
 }
 
 .Pres{
@@ -69,4 +100,14 @@ border-spacing: 10px 10px 0px 10px;
 	padding: 10px 10px 10px 10px;
 	font-size: 15px;
 	color: white;
+}
+
+.backPic{
+	background-image: url("../img/design_film_large.jpg");
+	transition: 300ms;
+}
+
+.backPic:hover{
+	transition:300ms;
+	background-image: url("../img/design_film_largeblack.jpg");
 }

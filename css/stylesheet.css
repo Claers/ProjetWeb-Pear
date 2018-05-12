@@ -1,4 +1,4 @@
-/*Récupere la font San Francisco d'apple*/
+﻿/*Récupere la font San Francisco d'apple*/
 @font-face { font-family: SFPro; src: url('../font/SF-Pro-Text-Regular.otf'); }
 
 body{
@@ -7,9 +7,7 @@ body{
 }
 
 /*Responsive utils*/
-* {
-    box-sizing: border-box;
-}
+
 
 .footer{
 	display: flex;
@@ -28,13 +26,14 @@ body{
 	position: absolute;
 }
 /*Menu en grande taille*/
-@media screen and (min-width: 750px){
+@media screen and (min-width: 765px){
 
 	/*Style du menu*/	
 	.menu{
 		background-color: rgba(0,0,0,0.8);
-		padding-left: 23%;
-		display: flex;
+		 padding-left: auto; 
+		padding-left: auto	; 
+		display: block;
 		overflow: hidden;
 		position: fixed;
 		width: 100%;
@@ -82,7 +81,7 @@ height: 20px;
 	/*Positionement du tableau qui contient le menu*/
 	.MenuText ul{
 		margin-top:0.8em;
-		padding-right: 70px;
+		padding-left: 10%;
 	}
 
 	/*Ajoute un espacement entre chaque li*/
@@ -101,7 +100,7 @@ height: 20px;
 }
 
 /*Menu en petite taille*/
-@media screen and (max-width: 750px){
+@media screen and (max-width: 765px){
 	.menu{
 		text-align:left;
 		background-color: rgba(25, 25, 25,0.9);
@@ -142,25 +141,41 @@ height: 20px;
     }
     .menu li{
     	font-size: 14px;
-    	float:left;
+
     	list-style-type: none;
     	font-style: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     }
+    .menu.responsive{
+    	transition: 500ms;
+    	background-color: #000;
+    }
 
+    .menu.responsive li{
+    	border-style: none none solid none;
+    	border-collapse: separate;
+    	border-color: rgb(51, 51, 51);
+    	border-bottom-width:1px;
+    	margin-bottom: 10px;
+    	
+    }
     .menu.responsive .icon {
     	position: absolute;
+    	float: left;
     	right: 0;
-    	top: 0;
+    	top:15px;
+    	right: 100vw;
+  	}
+  	.menu.responsive #opencloseicon{
+		border-style: none none none none;
   	}
   .menu.responsive a {
-    	float: none;
     	display: block;
-    	text-align: left;
+    	margin-bottom: 10px;
   	}
 }
 
 
-@media screen and (min-width: 1050px) and (min-height: 750px){
+
 	.centeredLink{
 		text-align: center;
 		width: 100%;
@@ -178,6 +193,14 @@ height: 20px;
 		padding-bottom: 0.2%;
 		margin-bottom: 0.8%;
 		background-color: #000000;
+	}
+
+	.petitLink a{
+		color: black;
+		text-decoration: none;	
+	}
+	.petitLink.iMac a{
+		color: white;
 	}
 		.gauche{
 		float: left;
@@ -255,11 +278,29 @@ height: 20px;
 		font-size: 28px;
 	}
 
+	.watch{
+		background-color:#eee;
+		    height: 568px;
+	}
 
+	.AirPods{
+		background-color: #fafafa;
+		    height: 568px;
+	}
 .double{
 	flex : 50%;
 }
-	
+
+@media screen and (max-width: 1050px){
+	.petitLink{
+	width: 100%
+}
+	#iPhoneImg img{
+		width: 600px;
+}
+	.homepod.iphonered .titre{
+		font-size: 40px;
+	}
 }
 
 body{
